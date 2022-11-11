@@ -20,7 +20,7 @@
 						<a class="nav-link active" aria-current="page" href="index.php">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="?page=novo">Novo cliente</a>
+						<a class="nav-link" href="?page=cadastrar">Novo cliente</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="?page=listar">Listar clientes</a>
@@ -36,14 +36,14 @@
 					<?php
 						include("../config/config.php");
 						switch(@$_REQUEST["page"]){
-							case "novo":
-								include("user_novo.php");
+							case "cadastrar":
+								include("cliente_cadastrar.php");
 								break;
 							case "listar":
-								include("user_listar.php");
+								include("cliente_listar.php");
 								break;
-							case "salvar_novo_cliente":
-								include("cadastrar_cliente.php");
+							case "salvar":
+								include("salvar_cliente.php");
 								break;
 							default:
 								include("../index.php");
