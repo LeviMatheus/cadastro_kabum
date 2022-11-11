@@ -1,3 +1,10 @@
+Tecnologias usadas:
+Xampp 8.1.10-0
+Bootstrap 5, CSS e JS compilados
+
+
+
+
 tipo: área administrativa
 objetivo: para usuários acessarem
 acesso: login e senha
