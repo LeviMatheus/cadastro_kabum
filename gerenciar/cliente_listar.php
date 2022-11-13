@@ -1,4 +1,4 @@
-<h2>Listar clientes</h2>
+<h2 class="header_destaque">Listar clientes</h2>
 
 <?php
     $sql = "SELECT * FROM clientes";
@@ -6,7 +6,7 @@
     $qtd_clientes = $res->num_rows;
 
     if($qtd_clientes > 0){
-        print("<table class='table table-hover table-striped table-bordered'>");
+        print("<table class='div_secundaria table table-hover table-striped table-bordered'>");
         print("<tr>");
         print "<th>#ID</th>";
         print "<th>Nome</th>";

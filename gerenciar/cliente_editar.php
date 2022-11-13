@@ -22,7 +22,7 @@
     </div>
     <div class="mb-3">
         <label>CPF</label>
-        <input type="text" name="cliente_cpf" value="<?php print $row->cliente_cpf; ?>" class="form-control" placeholder="123.123.123-12" required>
+        <input type="text" name="cliente_cpf" id="cliente_cpf" value="<?php print $row->cliente_cpf; ?>" class="form-control" placeholder="123.123.123-12" required>
     </div>
     <div class="mb-3">
         <label>RG</label>
@@ -30,9 +30,18 @@
     </div>
     <div class="mb-3">
         <label>Telefone</label>
-        <input type="text" name="cliente_telefone" value="<?php print $row->cliente_telefone; ?>" class="form-control" placeholder="(45) 99817-5314" required>
+        <input type="text" name="cliente_telefone" id="cliente_telefone" value="<?php print $row->cliente_telefone; ?>" class="form-control" placeholder="(45) 99817-5314" required>
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-primary">Atualizar</button>
     </div>
 </form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#cliente_telefone').mask('(00) 00000-0000');
+        $('#cliente_cpf').mask('000.000.000-00');
+    });
+</script>
