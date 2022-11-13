@@ -25,8 +25,8 @@
             print "<td>".$row->cliente_rg."</td>";
             print "<td>".$row->cliente_telefone."</td>";
             print "<td>
-                    <button class='btn btn-success'>Editar</button>
-                    <button class='btn btn-danger'>Excluir</button>
+                    <button onclick=\"location.href='?page=editar&id=".$row->cliente_id."';\" class='btn btn-success'>Editar</button>
+                    <button onclick=\"if(confirm('Tem certeza que deseja excluir este cliente?')){location.href='?page=salvar&acao=excluir&cliente_id=".$row->cliente_id."';}else{false;}\" class='btn btn-danger'>Excluir</button>
                     </td>";
             print("</tr>");
         }
