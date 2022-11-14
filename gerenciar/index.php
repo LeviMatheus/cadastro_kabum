@@ -9,7 +9,7 @@
 		<title>Cadastro Kabum</title>
 	</head>
   	<body class="div_principal">
-		<!-- Navegação -->
+		<!-- Navegação padrão -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav_principal">
 			<div class="container-fluid">
 				<!-- Logo -->
@@ -55,8 +55,13 @@
 							case "editar":
 								include("cliente_editar.php");
 								break;
+							case "logout":
+								header("Location: ../index.php");
+								die();
+								break;
 							default:
-								include("../index.php");
+								// caso logado vai pra home, caso não vai pra login
+								include("cliente_home.php");
 								break;
 						}
 					?>

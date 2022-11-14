@@ -1,4 +1,4 @@
-<h2 class="header_destaque">Listar clientes</h2>
+<h4 class="header_destaque">Listar clientes</h4>
 
 <?php
     $sql = "SELECT * FROM clientes";
