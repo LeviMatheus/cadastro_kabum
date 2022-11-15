@@ -30,37 +30,28 @@
     </ul>
 </h4>
 
+<h3>Base de dados</h3>
+<h4>Tabela: Clientes</h4>
+<h5>Campos
+  <ul>
+    <li>cliente_id</li>
+    <li>cliente_nome</li>
+    <li>cliente_datanasc</li>
+    <li>cliente_cpf</li>
+    <li>cliente_rg</li>
+    <li>cliente_telefone</li>
+  </ul>
+</h5>
+<h4>Tabela: Usuários</h4>
+<h5>Campos
+  <ul>
+    <li>user_id</li>
+    <li>user_nome</li>
+    <li>user_senha</li>
+    <li>user_email</li>
+  </ul>
+</h5>
 
-
-
-tipo: área administrativa
-objetivo: para usuários acessarem
-acesso: login e senha
-
-tipo: Gerenciador de clientes
-objetivo: listar, incluir, editar, excluir
-acesso: login e senha
-
-cadastro:
-nome
-data_nasc
-cpf
-rg
-telefone
-
-sql:
-1 cliente -> N endereços
-
-php
-mysql
-frontend livre
-
-read-me explicando
-
-diferenciais:
-solid
-testes
-camadas
-escabilidade
-
-botar no github
+<h4>ToDo list:</h4>
+<h5>Atualizar base de dados para relacionar cadastro do cliente a N endereços
+</h5>
