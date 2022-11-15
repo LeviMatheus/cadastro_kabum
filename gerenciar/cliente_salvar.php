@@ -10,10 +10,10 @@
             $res = $conexao->query($sql);
 
             if($res==true){
-                print("<script>alert('Cadastrado com sucesso')</script>");
+                print("<p class='alert alert-success' style='text-align:center'>Cadastrado com sucesso!</p>");
                 print("<script>location.href='?page=listar'</script>");
             }else{
-                print("<script>alert('Erro ao cadastrar')</script>");
+                print("<p class='alert alert-danger' style='text-align:center'>Erro ao cadastrar</p>");
             }
             break;
         case 'editar':
@@ -33,10 +33,10 @@
             $res = $conexao->query($sql);
 
             if($res==true){
-                print("<script>alert('Dados do cliente atualizados com sucesso')</script>");
+                print("<p class='alert alert-success' style='text-align:center'>Dados do cliente atualizados com sucesso!</p>");
                 print("<script>location.href='?page=listar'</script>");
             }else{
-                print("<script>alert('Erro ao atualizar dados do cliente')</script>");
+                print("<p class='alert alert-danger' style='text-align:center'>Erro ao atualizar dados do cliente</p>");
             }
             break;
 
@@ -45,15 +45,15 @@
             $res = $conexao->query($sql);
 
             if($res==true){
-                print("<script>alert('Dados do cliente excluídos com sucesso')</script>");
+                print("<p class='alert alert-success' style='text-align:center'>Dados do cliente excluídos com sucesso!</p>");
                 print("<script>location.href='?page=listar'</script>");
             }else{
-                print("<script>alert('Erro ao excluir dados do cliente')</script>");
+                print("<p class='alert alert-danger' style='text-align:center'>Erro ao excluir dados do cliente</p>");
             }
             break;
         
         default:
-            print("<script>alert('Erro 404: Ação não encontrada')</script>");
+            print("<p class='alert alert-warning' style='text-align:center'>Erro 404: Ação não encontrada</p>");
             print("<script>location.href='?page=listar'</script>");
             break;
     }

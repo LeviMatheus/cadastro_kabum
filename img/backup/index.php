@@ -5,6 +5,6 @@
 
     if(!isset($_SESSION['id'])){
         // die("Você não pode acessar esta página, por favor, faça o login. <p><a href=\"index.php\">Entrar</a></p>");
-        header("Location: ../index.php");
+        header("Location: ../../login.php");
     }
 ?>
