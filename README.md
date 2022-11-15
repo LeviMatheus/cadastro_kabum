@@ -53,5 +53,8 @@
 </h5>
 
 <h4>ToDo list:</h4>
-<h5>Atualizar base de dados para relacionar cadastro do cliente a N endereços
+<h5>Campos
+  <ul>
+    <li>Atualizar base de dados para relacionar cadastro do cliente a N endereços</li>
+  </ul>
 </h5>
