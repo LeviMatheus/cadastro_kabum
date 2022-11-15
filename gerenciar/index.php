@@ -1,3 +1,7 @@
+<?php
+	include('../proteger.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
@@ -56,9 +60,7 @@
 								include("cliente_editar.php");
 								break;
 							case "logout":
-								header("Location: ../index.php");
-								die();
-								break;
+								include("cliente_logout.php");
 							default:
 								// caso logado vai pra home, caso não vai pra login
 								include("cliente_home.php");

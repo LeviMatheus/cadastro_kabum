@@ -1,6 +1,5 @@
-
 <!-- Mensagem de boas vindas -->
-<h4 class="header_destaque">Olá administrador, seja bem vindo!</h4>
+<h4 class="header_destaque">Olá <?php $_SESSION['nome']; ?>, seja bem vindo!</h4>
 <!-- carroussel de imagens -->
 <div id="carouselExampleControls" class="carousel slide div_secundaria carousel-dark" data-bs-ride="carousel">
 	<div class="carousel-inner">
