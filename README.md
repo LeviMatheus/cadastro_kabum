@@ -8,9 +8,10 @@
 ![MySql](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
 
 <h3>Este é um sistema simples de Gerenciamento de Clientes</h3>
+
+<h3>Features</h3>
 <h4>
   <ul>
-    <li>Features</li>
     <li>Inclusão</li>
     <li>Listagem</li>
     <li>Edição</li>
