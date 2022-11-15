@@ -16,7 +16,7 @@
     <li>Listagem</li>
     <li>Edição</li>
     <li>Exclusão</li>
-    <li>Login com bloqueio de acesso</li>
+    <li>Login com bloqueio de acesso (Para acessar como adminitrador use o email admin@admin.com, senha: admin123</li>
     <li>Criptografia real de senhas</li>
     <li>Sessão de usuário</li>
   </ul>
